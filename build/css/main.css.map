@@ -1,0 +1,1 @@
+{"version":3,"file":"css/main.css","mappings":";;;AAAA;IACI,UAAU;AACd,C","sources":["webpack://app/./src/main.css"],"sourcesContent":["#btn {\r\n    color: red;\r\n}"],"names":[],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"file":"page1/index.d141f9c62c6c7989.js","mappings":";;;;;AAAA;AACA;AACA;AACA,yB","sources":["webpack://app/./src/page1/page1.js"],"sourcesContent":["\r\n\r\nvar p = document.querySelector(\"p\");\r\np.innerTex=\"Hello Page1\";"],"names":[],"sourceRoot":""}
