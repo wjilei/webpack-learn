@@ -1,8 +1,14 @@
-require("./main.css");
-const logo = require("./logo.png");
+import Vue from 'vue';
 
-document.querySelector('#btn').addEventListener('click', function(e) {
-    alert('Hello webpack');
-}, false)
-
-document.querySelector('#logo').src=logo;
+let hours = new Date().getHours();
+new Vue({
+    el: "#app",
+    data: {
+        isMorning: hours <= 12,
+        isAfternoon: hours > 12,
+        inputType: "checkbox",
+    },
+    created(){
+        console.log("hahahah");
+    }
+});

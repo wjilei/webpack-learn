@@ -8,14 +8,22 @@ module.exports = {
     },
     mode: 'development',
     output: {
-        filename: '[name].[chunkhash:16].js',
+        filename: '[name].js',
         path: path.resolve(__dirname,'./build')
     },
     resolve: {
-        
+		
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js' 
+        }
+         
     },
     module:{
         rules: [
+            {
+                test: /\.vue$/,
+                loader: 'vue',
+            },
             {
                 test: /\.css$/,
                 use: [MiniCssPlugin.loader, 'css-loader'],
@@ -32,6 +40,11 @@ module.exports = {
                         }
                     }
                 ],
+            },
+            {
+                test: /\.(js|jsx)$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
             }
         ],
     },

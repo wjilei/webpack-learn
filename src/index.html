@@ -7,11 +7,14 @@
   <title>webpack</title>
 </head>
 <body>
-  <img id="logo" alt="logo">
-  <form>
-    <input type="text">
-    <button id="btn" type="submit">Click</button>  
-  </form>
-  <a href="page1/index.html">跳转</a>
+    <div id="app">
+      <p v-if="isMorning">上午好！</p>
+      <p v-if="isAfternoon">下午好！</p>
+      <ul>
+        <li v-for="i in 10"> {{i}}</li>
+      </ul>
+      <!-- <button v-bind:type="bttonType"></button> -->
+      <input v-bind:type="inputType">哈哈
+    </div>
 </body>
 </html>

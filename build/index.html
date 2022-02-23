@@ -5,13 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>webpack</title>
-<script defer src="main.ade6afb21dcd93c3.js"></script><link href="css/main.css" rel="stylesheet"></head>
+<script defer src="main.c3685724f783bc55.js"></script></head>
 <body>
-  <img id="logo" alt="logo">
-  <form>
-    <input type="text">
-    <button id="btn" type="submit">Click</button>  
-  </form>
-  <a href="page1/index.html">跳转</a>
+    <div id="app">
+      <p v-if="isMorning">上午好！</p>
+      <p v-if="isAfternoon">下午好！</p>
+      <ul>
+        <li v-for="i in 10"> {{i}}</li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      let hours = new Date().getHours();
+      new Vue({
+        el: "#app",
+        data: {
+          isMorning: hours <= 12,
+          isAfternoon: hours > 12,
+        },
+        created(){
+          console.log("hahahah");
+        }
+      });
+    </script>
 </body>
 </html>

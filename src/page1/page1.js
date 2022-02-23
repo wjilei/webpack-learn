@@ -1,4 +1,4 @@
 
 
 var p = document.querySelector("p");
-p.innerTex="Hello Page1";
+p.innerText="Hello Page1";
