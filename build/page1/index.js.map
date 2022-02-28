@@ -1,0 +1,1 @@
+{"version":3,"file":"page1/index.js","mappings":";;;;;AAEA,IAAIA,CAAC,GAAGC,QAAQ,CAACC,aAAT,CAAuB,GAAvB,CAAR;AACAF,CAAC,CAACG,SAAF,GAAY,aAAZ,C","sources":["webpack://app/./src/page1/page1.js"],"sourcesContent":["\n\nvar p = document.querySelector(\"p\");\np.innerText=\"Hello Page1\";"],"names":["p","document","querySelector","innerText"],"sourceRoot":""}

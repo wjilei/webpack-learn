@@ -5,28 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>webpack</title>
-<script defer src="main.c3685724f783bc55.js"></script></head>
+<script defer src="main.js"></script></head>
 <body>
     <div id="app">
-      <p v-if="isMorning">上午好！</p>
-      <p v-if="isAfternoon">下午好！</p>
-      <ul>
-        <li v-for="i in 10"> {{i}}</li>
-      </ul>
+      <App />
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script>
-      let hours = new Date().getHours();
-      new Vue({
-        el: "#app",
-        data: {
-          isMorning: hours <= 12,
-          isAfternoon: hours > 12,
-        },
-        created(){
-          console.log("hahahah");
-        }
-      });
-    </script>
 </body>
 </html>

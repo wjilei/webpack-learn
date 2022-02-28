@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
     entry: {
         'main': './src/main.js',
@@ -22,7 +23,7 @@ module.exports = {
         rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue',
+                loader: 'vue-loader',
             },
             {
                 test: /\.css$/,
@@ -75,5 +76,6 @@ module.exports = {
             filename: 'page1/index.html', // 构建后的文件名
             template: './src/page1/index.html' // 源文件名
         }),
+        new VueLoaderPlugin(),
     ]
 };

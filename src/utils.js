@@ -42,6 +42,6 @@ Vue.component("hello", {
     }
 });
 Vue.component("display-number", {
-    template: '<div>当前的数字是{{number}}</div>',
+    template: '<span>当前的数字是{{number}}</span>',
     props: ['number'],
 })

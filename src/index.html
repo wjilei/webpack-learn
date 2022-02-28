@@ -8,20 +8,7 @@
 </head>
 <body>
     <div id="app">
-      <p v-if="isMorning">上午好！</p>
-      <p v-if="isAfternoon">下午好！</p>
-      <ul>
-        <li v-for="i in 10"> {{i}}</li>
-      </ul>
-      <!-- <button v-bind:type="bttonType"></button> -->
-      <p> {{product1Price | formatPrice}} </p>
-      <p> {{product2Price | formatPrice}} </p>
-      <p> {{product3Price | formatPrice}} </p>
-      <custom-button></custom-button>
-      <custom-button2></custom-button2>
-      <positive-numbers></positive-numbers>
-      <hello :age='11'></hello>
-      <display-number :number="number"></display-number>
+      <App />
     </div>
 </body>
 </html>

@@ -1,10 +1,11 @@
 import Vue from 'vue';
+import App from './App.vue'
 import  './utils.js';
 
 let hours = new Date().getHours();
 
 const CustomButton = {
-    template: '<button>自定义按钮</button>'
+    template: '<button class="custom-button"><slot>默认按钮</slot></button>'
 };
 
 new Vue({
@@ -19,7 +20,7 @@ new Vue({
         number: 0,
     },
     components: {
-        CustomButton,
+        App,
     },
     filters: {
       formatPrice(value) {
