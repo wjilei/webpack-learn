@@ -1,5 +1,10 @@
 <template>
-    <button>这里的文本不会被替换<slot>默认按钮文本</slot></button>
+   <div>
+       <h3><slot name="title">标题</slot></h3>
+       <p>
+           <slot>内容</slot>
+       </p>
+   </div>
 </template>
 <script>
 export default {

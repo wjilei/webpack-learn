@@ -1,7 +1,12 @@
 <template>
     <div>
         Hello {{name}}
-        <Button>新文本</Button>
+        <Button>
+            <template v-slot:title>
+                测试标题
+            </template>
+            内容
+        </Button>
     </div>
 </template>
 <script>

@@ -1,9 +1,14 @@
-# 练习webpack和vue
+* 使用.vue文件
 
-```plantuml
-@startmindmap
-* 设计模式
-** 面向对象分析
-** 测试
-@endmindmap
+```javascript
+<template>
+    <div></div>
+</template>
+<script>
+export default {
+
+}
+</script>
 ```
+
+> vue2 版本需要使用vue-loader@15, vue-template-compiler
