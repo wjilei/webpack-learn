@@ -12,3 +12,4 @@ export default {
 ```
 
 > vue2 版本需要使用vue-loader@15, vue-template-compiler
+

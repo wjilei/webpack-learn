@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack --config webpack.config.js",
-    "server": "go run .\\server\\src\\main.go",
+    "server": "cd server && go run src\\main.go",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
